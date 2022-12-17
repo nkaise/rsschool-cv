@@ -1,1 +1,1 @@
-# rsschool-cv
+https://nkaise.github.io/rsschool-cv/
