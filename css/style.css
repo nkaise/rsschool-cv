@@ -14,6 +14,7 @@ body {
 }
 
 .container {
+    /* border: 1px solid rgb(228, 228, 163, 0.2); */
     padding: 10px 10px 10px 10px;
 }
 
@@ -68,6 +69,16 @@ a:hover {
 
 /* About me */
 
+.about-me {
+}
+.container {
+}
+.about-me-title {
+    /* text-align: center; */
+}
+.about-me-text {
+}
+
 /* Skills */
 
 .skills-block {
@@ -103,17 +114,22 @@ progress::-webkit-progress-value {
     grid-template-columns: 1fr 1fr;
     column-gap: 10px;
 }
-
+.experience-first {
+}
 .experience-company {
     margin-bottom: 10px;
 }
-
 .experience-years {
     margin-bottom: 10px;
 }
-
 .experience-positions {
     margin-bottom: 10px;
+}
+.experience-tasks {
+}
+.experience-second {
+}
+.experience-steps {
 }
 
 /* Education */
@@ -124,13 +140,21 @@ progress::-webkit-progress-value {
     column-gap: 10px;
 }
 
+.education-uni {
+}
 .education-title {
     margin-bottom: 10px;
 }
+.education-name {
 
+}
 .education-years {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+.education-profession {
+}
+.education-courses {
 }
 
 /* Footer */
@@ -145,4 +169,10 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.footer-github {
+}
+.footer-year {
+}
+.footer-rs-logo {
 }

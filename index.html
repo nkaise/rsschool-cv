@@ -4,9 +4,145 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
 </head>
 <body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-row">
+                <div class="header-img">
+                    <img src="./img/avatar.jpg" alt="Avatar" width="300" height="300">
+                </div>
+                <div class="header-text">
+                    <h1 class="header-text-title">Anastasia Ganiushkina</h1>
+                    <h2 class="header-text-subtitle subtitle">Junior Web-Developer</h2>
+                    <ul class="header-contacts">
+                        <li><img src="./img/github.png" alt="Github icon" width="25" height="25"><a href="https://github.com/nkaise" target="_blank"> github.com/nkaise</a></li>
+                        <li><img src="./img/telegram.png" alt="Telegram icon" width="25" height="25"><a href="https://nkaise.t.me" target="_blank"> @nkaise</a></li>
+                        <li><img src="./img/phone.png" alt="Phone icon" width="20" height="20"> <a href="tel:995511280059">+995 511 28 00 59</a></li>
+                        <li><img src="./img/geo.png" alt="Telegram icon" width="25" height="25"> Tbilisi, Georgia</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="about-me">
+        <div class="container">
+            <h3 class="about-me-title subtitle">About me</h3>
+            <p class="about-me-text">
+                Hello! <br>
+                I'm a junior frontend developer. I want to learn how to create cool and interactive sites. <br>
+                I've worked as a technical support specialist, after that as a system administrator. I was always inspired by people who can do so beautiful sites, so I realized that I want to be one of these people.
+            </p>
+        </div>
+    </section>
+
+    <section class="skills">
+        <div class="container">
+            <h3 class="skills-title subtitle">Skills</h3>
+            <div class="skills-block">
+                <div class="skills-first">
+                    <ul>
+                        <li>HTML<br><progress max="100" value="80"></progress></li>
+                        <li>CSS<br><progress max="100" value="70"></progress></li>
+                        <li>JS<br><progress max="100" value="30"></progress></li>
+                    </ul>
+                </div>
+                <div class="skills-second">
+                    <ul>
+                        <li>GIT&GITHUB<br><progress max="100" value="30"></progress></li>
+                        <li>FIGMA<br><progress max="100" value="70"></progress></li>
+                        <li>LINUX<br><progress max="100" value="60"></progress></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="code-example">
+        <div class="container">
+            <h3 class="code-example-title subtitle">Code example</h3>
+            <pre class="code-example-text">
+                <code>
+    function saleHotdogs(n) {
+        if (n < 5) {
+          return n * 100;
+        }
+        if (n >= 5 && n < 10) {
+          return n * 95;
+        }
+        if (n >= 10) {
+          return n * 90;
+        }
+    }
+                </code>
+            </pre>
+        </div>
+    </section>
+
+    <section class="experience">
+        <div class="container">
+            <h3 class="experience-title subtitle">Work experience</h3>
+            <div class="experience-block">
+                <div class="experience-first">
+                    <h4 class="experience-company"><b><a href="https://timeweb.com/ru/" target="_blank">Timeweb</a></b></h4>
+                    <p class="experience-years">2017 - 2021</p>
+                    <div class="experience-positions">Support specialist</div>
+                    <p class="experience-tasks">My first job was in a hosting provider. Firstly, I worked as an information support specialist. I helped clients with basic questions about domains, sites, payments, etc. After that I moved to technical support, where I worked more with Linux, web-servers, redirections. </p>
+                </div>
+                <div class="experience-second">
+                    <h4 class="experience-company"><b><a href="https://www.webit.ru/" target="_blank">Webit</a></b></h4>
+                    <p class="experience-years">2021 - 2022</p>
+                    <div class="experience-positions">System administrator</div>
+                    <p class="experience-tasks">My second job was in the web studio. I worked with Linux - OS Debian, CentOS, Ubuntu. I solved variety of tasks. I worked with systemd, GIT, Apache, Nginx, PHP-FPM, MySQL, CGI, DNS, CMS, Frameworks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="education">
+        <div class="container">
+            <h3 class="education-title subtitle">Education</h3>
+            <div class="education-block">
+                <div class="education-uni">
+                    <h4 class="education-title"><b>University:</b></h4>
+                    <a href="https://www.sut.ru/" target="_blank" class="education-name">The Bonch-Bruevich Saint Petersburg State University of Telecommunications</a>
+                    <p class="education-years">2013-2017</p>
+                    <p class="education-profession">Computer science and engineering</p>
+                </div>
+                <div class="education-courses">
+                    <h4 class="education-title"><b>Courses:</b></h4>
+                    <ul>
+                        <li><a href="https://stepik.org/certificate/c6daa8a11960142c5cf00c792163af38bff8f1cc.pdf" class="education-name" target="_blank">Programming on Python</a></li><br>
+                        <li><a href="https://htmlacademy.ru/" class="education-name" target="_blank">HTML Academy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="language">
+        <div class="container">
+            <h3 class="language-title subtitle">Foreign language</h3>
+            <ul>
+                <li>English B1 (EPAM test)</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-block">
+                <a href="https://github.com/nkaise" target="_blank" class="footer-github">Github</a>
+                <h4 class="footer-year">2022</h4>
+                <a href="https://rs.school/js/" target="_blank" class="footer-rs-logo"><img src="./img/rs-logo.svg" alt="" width="90" height="90"></a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
