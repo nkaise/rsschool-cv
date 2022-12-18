@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
 </head>
@@ -12,6 +12,21 @@
 
     <header class="header">
         <div class="container">
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#about-me" class="nav-item">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#code-example">Code example</a></li>
+                    <li><a href="#my-project">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#language">Languages</a></li>
+                </ul>
+                <button class="nav-button" id="nav-button">
+                    <img width="48" height="48" src="./img/menu-open.png" alt="Icon" id="nav-img">
+                </button>
+            </nav>
+
             <div class="header-row">
                 <div class="header-img">
                     <img src="./img/avatar.jpg" alt="Avatar" width="300" height="300">
@@ -30,31 +45,31 @@
         </div>
     </header>
 
-    <section class="about-me">
+    <main class="about-me" id="about-me">
         <div class="container">
-            <h3 class="about-me-title subtitle">About me</h3>
+            <h2 class="about-me-title subtitle">About me</h2>
             <p class="about-me-text">
                 Hello! <br>
                 I'm a junior frontend developer. I want to learn how to create cool and interactive sites. <br>
                 I've worked as a technical support specialist, after that as a system administrator. I was always inspired by people who can do so beautiful sites, so I realized that I want to be one of these people.
             </p>
         </div>
-    </section>
+    </main>
 
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="container">
             <h3 class="skills-title subtitle">Skills</h3>
             <div class="skills-block">
                 <div class="skills-first">
                     <ul>
                         <li>HTML<br><progress max="100" value="80"></progress></li>
-                        <li>CSS<br><progress max="100" value="70"></progress></li>
-                        <li>JS<br><progress max="100" value="30"></progress></li>
+                        <li>CSS<br><progress max="100" value="50"></progress></li>
+                        <li>JS<br><progress max="100" value="10"></progress></li>
                     </ul>
                 </div>
                 <div class="skills-second">
                     <ul>
-                        <li>GIT&GITHUB<br><progress max="100" value="30"></progress></li>
+                        <li>GIT&GITHUB<br><progress max="100" value="20"></progress></li>
                         <li>FIGMA<br><progress max="100" value="70"></progress></li>
                         <li>LINUX<br><progress max="100" value="60"></progress></li>
                     </ul>
@@ -63,16 +78,16 @@
         </div>
     </section>
 
-    <section class="code-example">
+    <section class="code-example" id="code-example">
         <div class="container">
             <h3 class="code-example-title subtitle">Code example</h3>
             <pre class="code-example-text">
                 <code>
     function saleHotdogs(n) {
-        if (n < 5) {
+        if (n &lt; 5) {
           return n * 100;
         }
-        if (n >= 5 && n < 10) {
+        if (n >= 5 && n &lt; 10) {
           return n * 95;
         }
         if (n >= 10) {
@@ -84,7 +99,21 @@
         </div>
     </section>
 
-    <section class="experience">
+    <section class="my-project" id="my-project">
+        <div class="container">
+            <h3 class="code-example-title subtitle">My projects</h3>
+            <!-- <p class="my-project-text">Code: ...</p> -->
+            <div class="my-project-block">
+                <ul>
+                    <li><a href="http://furniture.ci19951.tw1.ru" target="_blank"><img src="./img/sites/furniture.png" alt="" width="500" height="500"></a></li>
+                    <li><a href="http://cv-site.ci19951.tw1.ru" target="_blank"><img src="./img/sites/cv-site.png" alt="" width="500" height="500"></a></li>
+                    <li><a href="http://alivio.ci19951.tw1.ru" target="_blank"><img src="./img/sites/alivio.png" alt="" width="500" height="500"></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
         <div class="container">
             <h3 class="experience-title subtitle">Work experience</h3>
             <div class="experience-block">
@@ -104,7 +133,7 @@
         </div>
     </section>
 
-    <section class="education">
+    <section class="education" id="education">
         <div class="container">
             <h3 class="education-title subtitle">Education</h3>
             <div class="education-block">
@@ -117,7 +146,7 @@
                 <div class="education-courses">
                     <h4 class="education-title"><b>Courses:</b></h4>
                     <ul>
-                        <li><a href="https://stepik.org/certificate/c6daa8a11960142c5cf00c792163af38bff8f1cc.pdf" class="education-name" target="_blank">Programming on Python</a></li><br>
+                        <li><a href="https://stepik.org/certificate/c6daa8a11960142c5cf00c792163af38bff8f1cc.pdf" class="education-name" target="_blank">Programming on Python</a></li>
                         <li><a href="https://htmlacademy.ru/" class="education-name" target="_blank">HTML Academy</a></li>
                     </ul>
                 </div>
@@ -125,7 +154,7 @@
         </div>
     </section>
 
-    <section class="language">
+    <section class="language" id="language">
         <div class="container">
             <h3 class="language-title subtitle">Foreign language</h3>
             <ul>
@@ -144,5 +173,6 @@
         </div>
     </footer>
 
+    <script src="./js/main.js"></script>
 </body>
 </html>
