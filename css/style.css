@@ -6,7 +6,6 @@ body {
     color: #FFFCF5;
     margin-top: 15px;
     margin-bottom: 15px;
-    
 }
 
 .container {
@@ -14,10 +13,8 @@ body {
     padding: 10px 10px 10px 10px;
     margin-left: auto;
     margin-right: auto;
-
     padding-left: 15px;
     padding-right: 15px;
-
 }
 
 .subtitle {
@@ -50,7 +47,7 @@ a:hover {
     justify-content: space-between;
 }
 
-.header-nav {
+.nav {
     margin-bottom: 20px;
 }
 
@@ -259,6 +256,10 @@ progress::-webkit-progress-value {
 
 .education-years {
     margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.education-courses li:first-child {
     margin-bottom: 10px;
 }
 
