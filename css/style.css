@@ -1,28 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
 body {
-    width: 830px;
-    margin-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
     font-family: 'Montserrat', sans-serif;
     background-color: #0C0B05;
     color: #FFFCF5;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
 }
 
 .container {
-    /* border: 1px solid rgb(228, 228, 163, 0.2); */
+    width: 830px;
     padding: 10px 10px 10px 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 15px;
+    padding-right: 15px;
+
 }
 
 .subtitle {
     font-size: 18px;
     color: #D3902A;
     margin-bottom: 10px;
-    text-align: left;
+    text-align: center;
 }
 
 a {
@@ -35,7 +37,26 @@ a:hover {
     transition: 0.3s;
 }
 
+@media (max-width: 800px) {
+    .container {
+        width: 100%;
+    }
+}
+
 /* Header */
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav {
+    margin-bottom: 20px;
+}
+
+.nav-button {
+    display: none;
+}
 
 .header-row {
     display: grid;
@@ -61,23 +82,63 @@ a:hover {
 
 .header-text-subtitle {
     margin-bottom: 20px;
+    text-align: left;
 }
 
 .header-contacts > li:not(:last-child) {
     margin-bottom: 10px;
 }
 
-/* About me */
+@media (max-width: 734px) {
+    .header-row {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    
+    .header-text-subtitle,
+    .header-contacts {
+        text-align: center;
+    }
 
-.about-me {
+    .nav-list {
+        display: none;
+    }
+
+    .nav-button {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .nav.open .nav-list {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-top: 30px;
+        font-size: 28px;
+        line-height: 80px;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgb(12, 11, 5, 0.98);
+    } 
+
+    .nav-button {
+        z-index: 101;
+    }
 }
-.container {
+
+@media (max-width: 404px) {
+    .header-text-title {
+        text-align: center;
+    }
 }
-.about-me-title {
-    /* text-align: center; */
-}
-.about-me-text {
-}
+
+/* About me */
 
 /* Skills */
 
@@ -107,6 +168,43 @@ progress::-webkit-progress-value {
     border-radius: 10px;
 }
 
+@media (max-width: 734px) {
+    .skills-block {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills-second ul > li:first-child {
+        margin-top: 10px;
+    }
+}
+
+/* Code example */
+
+.code-example .container {
+    padding-bottom: 0;
+}
+
+/* My project */
+
+.my-project-block ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.my-project-block img {
+    border-radius: 10px;
+}
+
+.my-project-block img:hover {
+    box-shadow: 2px 2px 20px 7px #D3902A;
+    transition-timing-function: ease-in;
+    transition: 0.3s;
+}
+
 /* Experience */
 
 .experience-block {
@@ -114,22 +212,37 @@ progress::-webkit-progress-value {
     grid-template-columns: 1fr 1fr;
     column-gap: 10px;
 }
-.experience-first {
-}
+
 .experience-company {
     margin-bottom: 10px;
 }
+
 .experience-years {
     margin-bottom: 10px;
 }
+
 .experience-positions {
     margin-bottom: 10px;
 }
-.experience-tasks {
+
+@media (max-width: 800px) {
+    .experience-block {
+        grid-template-columns: 370px 360px;
+    }
 }
-.experience-second {
-}
-.experience-steps {
+
+@media (max-width: 750px) {
+    .experience-block {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .experience-company,
+    .experience-years,
+    .experience-positions {
+        text-align: center;
+    }
 }
 
 /* Education */
@@ -140,21 +253,30 @@ progress::-webkit-progress-value {
     column-gap: 10px;
 }
 
-.education-uni {
-}
 .education-title {
     margin-bottom: 10px;
 }
-.education-name {
 
-}
 .education-years {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.education-profession {
+
+@media (max-width: 750px) {
+    .education-block {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        text-align: center;
+    }
 }
-.education-courses {
+
+/* Language */
+
+@media (max-width: 750px) {
+    .language {
+        text-align: center;
+    }
 }
 
 /* Footer */
@@ -169,10 +291,4 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.footer-github {
-}
-.footer-year {
-}
-.footer-rs-logo {
 }
