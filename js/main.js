@@ -19,5 +19,35 @@ navButton.onclick = () => {
     }
 }
 
+// Slider 
 
+const slider = document.querySelector('#my-project-slider');
+const sliderItems = document.querySelectorAll('.project-link');
+const prevButton = document.querySelector('.left-btn');
+const nextButton = document.querySelector('.right-btn');
 
+var currentProject = 0;
+
+nextButton.addEventListener('click', () => {
+    sliderItems[currentProject].classList.add('hidden');
+    if (currentProject < 4) {
+        currentProject += 1;
+        sliderItems[currentProject].classList.remove('hidden');
+    }
+    else if (currentProject === 4) {
+        currentProject = 0;
+        sliderItems[currentProject].classList.remove('hidden');
+    }
+})
+
+prevButton.addEventListener('click', () => {
+    sliderItems[currentProject].classList.add('hidden');
+    if (currentProject > 0) {
+        currentProject -= 1;
+        sliderItems[currentProject].classList.remove('hidden');
+    }
+    else if (currentProject === 0) {
+        currentProject = 4;
+        sliderItems[currentProject].classList.remove('hidden');
+    }
+})
